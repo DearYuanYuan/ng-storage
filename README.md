@@ -1,5 +1,6 @@
+此项目是ng做的一个网盘，只有前端代码片段
 
-
+ng.md是关于ng的一些用法和typescript的一些语法
 
 # NgProject
 
