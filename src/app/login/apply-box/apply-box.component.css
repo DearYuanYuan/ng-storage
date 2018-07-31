@@ -117,14 +117,6 @@ textarea {
 .common-ipt:read-only {
   color: #757575;
 }
-.login-page {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: url(../images/escheresque_ste.png) repeat;
-}
 .left-project-msg {
   width: 60%;
   height: 100%;

@@ -1,0 +1,245 @@
+@font-white:#fff;
+@font-grey:#B2B2B2;
+@font-yellow:#F58123;
+@bg-cover:#343434;
+@body-bg:#3F3F3F;
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+  margin: 0;
+  padding: 0;
+};
+
+body {
+  font-family: "Helvetica Neue",'Helvetica','Arial',"苹方","微软雅黑",'sans-serif';
+  font-size:12px;
+  color: @font-grey;
+  background:@body-bg;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+  list-style: none;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: @font-grey;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+input, textarea,button {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+.inline{
+  display: inline-block;
+}
+.block{
+  display: block;
+}
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+  overflow:hidden;
+}
+
+.ellipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//按钮样式
+.common-btn{
+  width:120px;
+  height:38px;
+  line-height: 38px;
+  border-radius: 4px;
+  cursor: pointer;
+  border:1px solid @font-grey;
+}
+.confirm-btn{
+  background: @font-yellow;
+  color: @font-white;
+  border:1px solid @font-yellow;
+}
+.cancel-btn{
+  background: @bg-cover;
+  color: @font-white;
+}
+//input样式
+.common-ipt{
+  border: 1px solid @font-grey;
+  border-radius: 4px;
+  background: @bg-cover;
+  width:320px;
+  height:38px;
+  line-height: 38px;
+  color:@font-grey;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.common-ipt:read-only{
+  color:#757575;
+}
+.login-page{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  background: url(../images/escheresque_ste.png) repeat;
+}
+.left-project-msg{
+  width:60%;
+  height:100%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 100px;
+
+}
+.login-logo-icon{
+  margin-top: 30px;
+}
+.errorMsg{
+  line-height: 40px;
+  text-align: center;
+  color: @font-yellow;
+  font-size: 12px;
+}
+.project-intro{
+  width:427px;
+  margin:20% auto;
+  h1{
+    font-size: 36px;
+    line-height: 80px;
+    color: @font-white;
+  }
+  h2{
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+}
+.jump-other-website{
+  width: 50%;
+  position: fixed;
+  bottom: 60px;
+  li{
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+.right-project-login{
+  float: left;
+  width: 40%;
+  height:100%;
+  overflow-y: auto;
+  background: @bg-cover;
+  h3{
+    font-size: 24px;
+    color: @font-white;
+    line-height: 30px;
+  }
+}
+.login-form{
+  width:360px;
+  margin:30% auto;
+}
+
+.login-btn{
+  width:360px;
+  margin-top: 40px;
+}
+.form-ipt-cover{
+  margin-top: 14px;
+  i{
+    position: relative;
+    top:27px;
+    left: 16px;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+.apply-form{
+  width:370px;
+  margin:10% auto;
+  height: 680px;
+}
+.userApply-icon{
+  width: 230px;
+  float: left;
+}
+.userApply-ipt{
+  width: 187px;
+}
+.uploadIcon{
+  width: 118px;
+  height:138px;
+  float: right;
+  font-size: 12px;
+  background: @font-yellow;
+  border-radius: 4px;
+  margin-top: -36px;
+  text-align: center;
+  line-height: 118px;
+  position: relative;
+  img{
+    width: 80px;
+    height:80px;
+    //padding:10px;
+    background-color:#fff;
+    border-radius: 40px;
+  }
+}
+.change-usr-icon{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 118px;
+  text-align: center;
+  line-height: 24px;
+  height: 24px;
+  background: rgba(0,0,0,.5);
+  color: #f0f0f0;
+  font-size: 12px;
+}
+//上传头像
+#uploadFileForm{
+  width:118px;
+  height:24px;
+  position: relative;
+  top:-4px;
+}
+.selectUsrIcon{
+  width:118px;
+  height:24px;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  opacity: 0;
+  z-index: 9;
+}
