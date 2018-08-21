@@ -186,6 +186,7 @@ textarea {
 }
 .form-ipt-cover p {
   font-size: 12px;
+  margin:12px 0;
 }
 .apply-form {
   width: 370px;

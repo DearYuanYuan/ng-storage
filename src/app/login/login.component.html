@@ -4,12 +4,12 @@
       <div class="project-intro">
           <h1>用户端</h1>
           <h2>若还没有账户，请提交权限申请，等待管理员回应。</h2>
-              <button class="common-btn confirm-btn">申请权限</button>
-              <button class="common-btn confirm-btn" id = "btn-login-enter">登录</button>
+              <button class="common-btn confirm-btn" *ngIf="showLogin" (click) = "toggleLogin()">申请权限</button>
+              <button class="common-btn confirm-btn" id = "btn-login-enter" *ngIf="!showLogin"  (click) = "toggleLogin()" >登录</button>
       </div>
   </div>
   <div class="right-project-login">
-    <app-login-box></app-login-box>
-    <!-- <app-apply-box></app-apply-box> -->
+    <app-login-box  *ngIf="showLogin"></app-login-box>
+    <app-apply-box  *ngIf="!showLogin"></app-apply-box>
   </div>
 </div>
